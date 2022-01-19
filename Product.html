@@ -1,103 +1,400 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <script src="js/jquery.js"></script>        
-    <script src="js/bootstrap.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- my added newstyle CSS -->
+    <link href="productStyle.css" rel="stylesheet">
 
-    <title>Amazune-bookstore</title>
+    <!-- Page title -->
+    <title>Home</title>
 </head>
-<body>
- <!--Navigation bar starts here-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" role="navigation" class="navbar navbar-default" >
-            <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNinIlthoEb8jv9aPSWUmJdJ5QDSVgjBrc4w&usqp=CAU" alt="mylogo" height="65"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Log-in</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="signup.html">Sign-up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="productform.html">Product Form</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="productform.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Product
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contactUs.html">Contact Us</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-sm-0 mx-auto">
-                <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <div></div>
-                <ul class="nav navbar-nav navbar-right ms-auto">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign In  &nbsp &nbsp &nbsp</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up &nbsp</a></li>
-                </ul>
-              
+<body>
+
+    <!-- Navigation bar start -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./asset/Amazune.png" alt="mylogo" width="50" height="50" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactUs.html">Contact us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                <li><a class="dropdown-item" href="Product.html">Action</a></li>
+                                <li><a class="dropdown-item" href="Product.html">Another action</a></li>
+                                <li><a class="dropdown-item" href="Product.html">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- The form -->
+                    <form class="log text-right" action="action_page.php">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="search" aria-describedby="button-addon2">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                    <ul class="log">
+                        <li class="logList"><span><input type="button" class="btn btn-outline-primary btn-sm" value="Login"  onclick="location.href=login.html">LogIn</span></li>
+                        <li class="logList"><span><input type="button" class="btn btn-outline-success btn-sm" value="SignUp">SignUp</span></li>
+                        <li class="logList"><span><input type="button" class="btn btn-outline-danger btn-sm" value="Sign Out" id="btnSignOut">SignOut</span></li>
+                    </ul>
+                </div>
             </div>
         </nav>
- <!--Navigation bar ends here-->
- <!--body starts starts here-->
- <div>
-     <p>This is home page</p>
- </div>
- 
-
- <!-- Background image start here-->
-<div class="bg-image" 
-style="background-image: url('https://www.birchbox.com/images/uploads/shutterstock_152763224.jpg');
-         background-size:100%;
-         background-position:center;
-         background-repeat: no-repeat;
-         position: absolute;
-         width: 100%;
-         height: 100%;">
-</div>
-<!-- Background image end-->
- 
-
-    <!--About us text -->
-        <div class="card-footer fixed-bottom text-center">
-            <large class="text-mute mr-4 font-weight-bold">Contact: </large>
-            <small class="text-mute mr-4"><span class="font-italic"> Email: </span> <a href="mailto:yayas@email.com" target="_blank">Email Us</a></small>
-            <small class="text-mute mr-4"><span class="font-italic"> Tel: </span><a href="#">0000000000</a></small>
-            <small class="text-mute mr-4"><span class="font-italic"> Address: </span> <a href="#">555 Woodenville st, my city, CA</a></small>
-            <small class="text-mute mr-4"><span class="font-italic"> Copyright: </span><a> </a>  &copy;2022</small>
-          </div>
+    </div>
+    <!-- Navigation bar end -->
+    <!-- BEGIN page content -->
+    <main class="flex-shrink-2">
+        <!-- MAIN start -->
+        <div class="container">
+            <h1 class="namePage">Products</h1>
+            <p class="namePage">Product lists</p>
         </div>
+
+        <!--	product list start-->
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/180-1800200_sony-ps4-price-in-pakistan-playstation-png-transparent.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">PlayStation</span> <span class="price">$599</span> </div>
+                            <p>PS4</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/247-2474659_lenovo-x1-carbon-gen-6-hd-png-download.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Laptop</span> <span class="price">$799</span> </div>
+                            <p>Dell Astro 3434</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/222-2221200_16-channel-4k-ultra-hd-ip-nvr-system.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Security Camera</span> <span class="price">$399</span> </div>
+                            <p>Lorex</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/21-215558_mobile-phone-download-png-image-mobile-phone-photo.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Mobile</span> <span class="price">$1199</span> </div>
+                            <p>Samsung</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/297-2975416_refrigerator-png-image-refrigerator-png-transparent-png.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Refrigerator</span> <span class="price">$1799</span> </div>
+                            <p>LG</p>
+                           <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/117-1172790_apple-tv-4k-32-gb-hd-png-download.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Tv 4k</span> <span class="price">$699</span> </div>
+                            <p>Samsung TV</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/9-91985_computer-clipart-transparent-background-acer-aspire-desktop-pc.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Desktop PC</span> <span class="price">$599</span> </div>
+                            <p>HP</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/30-307193_video-camera-png-no-background-canon-xf105-transparent.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Camera recorder</span> <span class="price">$1599</span> </div>
+                            <p>Camera</p>
+                           <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/369-3698822_thumb-image-mykronoz-smartwatch-zeround-2-hd-png.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Wearable watch</span> <span class="price">$299</span> </div>
+                            <p>Apple watch</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/324-3248738_imac-4k-5k-hd-png-download.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Mac all in one</span> <span class="price">$899</span> </div>
+                            <p>Mac</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/learn-BuyingGuide_DER-76255.jpg" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Gamer PC</span> <span class="price">$1399</span> </div>
+                            <p>Game</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/153-1533526_transparent-electronics-inkjet-printing-epson-ecotank-printers-hd.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Printer</span> <span class="price">$199</span> </div>
+                            <p>Epson</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/180-1800200_sony-ps4-price-in-pakistan-playstation-png-transparent.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">PlayStation</span> <span class="price">$599</span> </div>
+                            <p>PS4</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/247-2474659_lenovo-x1-carbon-gen-6-hd-png-download.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Laptop</span> <span class="price">$799</span> </div>
+                            <p>Dell Astro 3434</p>
+                           <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/222-2221200_16-channel-4k-ultra-hd-ip-nvr-system.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Security Camera</span> <span class="price">$399</span> </div>
+                            <p>Lorex</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/21-215558_mobile-phone-download-png-image-mobile-phone-photo.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Mobile</span> <span class="price">$1199</span> </div>
+                            <p>Samsung</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/297-2975416_refrigerator-png-image-refrigerator-png-transparent-png.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Refrigerator</span> <span class="price">$1799</span> </div>
+                            <p>LG</p>
+                           <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/117-1172790_apple-tv-4k-32-gb-hd-png-download.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Tv 4k</span> <span class="price">$699</span> </div>
+                            <p>Samsung TV</p>
+                           <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/9-91985_computer-clipart-transparent-background-acer-aspire-desktop-pc.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Desktop PC</span> <span class="price">$599</span> </div>
+                            <p>HP</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/30-307193_video-camera-png-no-background-canon-xf105-transparent.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Camera recorder</span> <span class="price">$1599</span> </div>
+                            <p>Camera</p>
+                           <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/369-3698822_thumb-image-mykronoz-smartwatch-zeround-2-hd-png.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Wearable watch</span> <span class="price">$299</span> </div>
+                            <p>Apple watch</p>
+                           <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/324-3248738_imac-4k-5k-hd-png-download.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Mac all in one</span> <span class="price">$899</span> </div>
+                            <p>Mac</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/learn-BuyingGuide_DER-76255.jpg" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Gamer PC</span> <span class="price">$1399</span> </div>
+                            <p>Game</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-2">
+                        <div class="text-center"> <img src="https://png.pngitem.com/pimgs/s/153-1533526_transparent-electronics-inkjet-printing-epson-ecotank-printers-hd.png" /> </div>
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Printer</span> <span class="price">$199</span> </div>
+                            <p>Epson</p>
+                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-primary mr-1">Buy Now</button><button class="btn btn-outline-secondary mr-1">Details</button> <button class="btn btn-outline-success mr-1">Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!--div to add more products-->
+                <!--
+	<div class="col">
     
-    <!--link to icons-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </div>
+	<div class="col">
+    
+  </div>
+	
+	<div class="col">
+    
+  </div>
+	<div class="col">
+    
+  </div>
+	
+	<div class="col">
+    
+  </div>
+-->
+
+            </div>
+        </div>
+
+
+        <!--	product list end-->
+        <!-- footer bar start -->
+        <footer class="mt-auto">
+<!--
+            <div class="container">
+                <span class="text-muted">Place sticky footer content here.</span>
+            </div>
+-->
+            <!--footer -->
+    <div class="card-footer text-center">
+        <large class="text-mute mr-4 font-weight-bold">Contact: </large>
+        <small class="text-mute mr-4"><span class="font-italic"> Email: </span> <a href="mailto:yayas@email.com" target="_blank">Email Us</a></small>
+        <small class="text-mute mr-4"><span class="font-italic"> Tel: </span><a href="#">0000000000</a></small>
+        <small class="text-mute mr-4"><span class="font-italic"> Address: </span> <a href="#">555 Woodenville st, my city, CA</a></small>
+        <small class="text-mute mr-4"><span class="font-italic"> Copyright: </span> &copy;2022</small>
+    </div>
+
+        </footer>
+        <!-- footer bar end -->
+        <!-- MAIN END -->
+
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap" />
+                        </svg>
+                    </a>
+                    <span class="text-muted">&copy; 2022 Amazune Company, Inc</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
+                </ul>
+            </footer>
+        </div>
+    </main>
+
+
+
+
+    <!-- END page content -->
+
+    <!-- Bootstrap 5.1.13 JS bundle script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
